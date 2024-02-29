@@ -79,7 +79,7 @@ void sieve()
     //mark all even number as not prime number
     mark[2] = 1;
     for(int i = 4; i<=N; i+=2)mark[i] = 1;
-    for(int i = 3; i*i<=N; i+=2)
+    for(int i = 3; i<=N; i+=2)
     {
         if(mark[i]==0)
         {
